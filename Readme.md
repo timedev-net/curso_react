@@ -35,5 +35,11 @@
 - Iniciando um projeto React
 - Apagando arquivos de exemplo do React
 - Estrutura de pastas e ponto de entrada da aplicação
+- Mostrando elementos da aplicação no DevTools
 - Subindo projeto criado no GitHub
 - Criando branch (ramificação) no GitHub para cada aluno
+	> git config (--global or --local) user.name "Your Name"
+	> git config --global user.email "youremail@yourdomain.com"
+
+	> git checkout -b nome_sobrenome
+	> git push -u origin nome_sobrenome
