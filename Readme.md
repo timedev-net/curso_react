@@ -43,3 +43,15 @@
 
 	> git checkout -b nome_sobrenome
 	> git push -u origin nome_sobrenome
+
+- O que é o JSX
+- Criando alguns componentes
+- import e export
+- Props do React
+- Hooks do React (Estado e Ciclo de vida do componente)
+- instalando algumas bibliotecas que vamos utilizar
+	> React Router Dom
+	> React Bootstrap
+	> React Icons
+	> Axios
+- Utilizando os componentes do React Bootstrap
