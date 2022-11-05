@@ -31,5 +31,9 @@
 
 ## Aula 02 - Começando com React
 
-- O que vamos desenvolver - https://www.figma.com/file/1kOTsGHpxjmhYia8zgiOXi/EmpregosDev?node-id=0%3A1
-- 
+- O que vamos desenvolver - https://www.figma.com/file/1kOTsGHpxjmhYia8zgiOXi/EmpregosDev?node-id=0%3A1 (Qual será o nome da aplicação?)
+- Iniciando um projeto React
+- Apagando arquivos de exemplo do React
+- Estrutura de pastas e ponto de entrada da aplicação
+- Subindo projeto criado no GitHub
+- Criando branch (ramificação) no GitHub para cada aluno
