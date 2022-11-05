@@ -43,3 +43,6 @@
 
 	> git checkout -b nome_sobrenome
 	> git push -u origin nome_sobrenome
+
+	> git checkout -b nome_sobrenome
+	> git push -u origin nome_sobrenome
