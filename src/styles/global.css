@@ -1,11 +1,14 @@
+* {
+  margin: 0px;
+}
 
 .navbar {
   background-color: rgb(32, 213, 95);
   width: 100vw;
   height: 70px;
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* gap: 10px; */
 }
