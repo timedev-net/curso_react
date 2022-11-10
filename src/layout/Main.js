@@ -5,7 +5,7 @@ function Main({ Page }) {
   return (
     <>
       <Navbar />
-      <div className="container border p-3 rounded-bottom shadow">
+      <div className="container border p-3 rounded-bottom shadow" style={{display: "flex", gap: 10, flexWrap: 'wrap'}}>
         <Page />
       </div>
     </>
