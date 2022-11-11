@@ -3,12 +3,11 @@ import Navbar from "./components/Navbar";
 function Main({ Page }) {
 
   return (
-    <>
+  <div style={{ display: 'flex', flexDirection: 'column', backgroundColor: '#ccc', height: '100vh', alignItems: 'center'}}>
       <Navbar />
-      <div className="container border p-3 rounded-bottom shadow" style={{display: "flex", gap: 10, flexWrap: 'wrap', justifyContent: "center"}}>
-        <Page />
-      </div>
-    </>
+      <Page />
+      <span style={{ width: '100vw', textAlign: 'center', marginTop: 20}}>Desenvoldido pelo Instituto Federal de Educação, Ciência e Tecnologia de Rondônia</span>
+    </div>
   );
 }
 
