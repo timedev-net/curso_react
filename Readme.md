@@ -55,3 +55,6 @@
 	> React Icons
 	> Axios
 - Utilizando os componentes do React Bootstrap
+
+
+"homepage": "https://timedev-net.github.io/curso_react",

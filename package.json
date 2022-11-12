@@ -2,7 +2,7 @@
   "name": "curso_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://timedev-net.github.io/curso_react",
+  
   "dependencies": {
     "bootstrap": "^5.2.2",
     "react": "^18.2.0",

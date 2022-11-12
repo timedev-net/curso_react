@@ -10,4 +10,6 @@ export const router = createBrowserRouter([
   { path: "/", element: <Main Page={Home} /> },
   { path: "profissionais", element: <Main Page={Profissionais} /> },
   { path: "vagas_abertas", element: <Main Page={VagasAbertas} /> },
-], {basename: '/curso_react'});
+],
+//  {basename: '/curso_react'}
+ );
