@@ -1,0 +1,10 @@
+.nav-link:focus {
+  color: #118d3b;
+}
+
+@media (max-width: 990px) {
+  nav>div.container form>div.input-group {
+    margin-top: 1.5rem;
+    margin-bottom: 5px;
+  }
+}

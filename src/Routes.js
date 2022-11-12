@@ -1,17 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Main from "./layout/Main";
-import Empresas from "./pages/Empresas";
+import VagasAbertas from "./pages/VagasAbertas";
 import Home from "./pages/Home";
 import Profissionais from "./pages/Profissionais";
 
-export default function() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Main Page={Home} />} />
-        <Route path="/profissionais" element={<Main Page={Profissionais} />} />
-        <Route path="/empresas" element={<Main Page={Empresas} />} /> 
-      </Routes>
-    </BrowserRouter>
-  );
-}
+
+export const routes = createBrowserRouter([
+  { path: "/", element: <Main Page={Home} /> },
+  { path: "profissionais", element: <Main Page={Profissionais} /> },
+  { path: "vagas_abertas", element: <Main Page={VagasAbertas} /> },
+]);
