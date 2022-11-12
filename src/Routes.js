@@ -4,7 +4,6 @@ import VagasAbertas from "./pages/VagasAbertas";
 import Home from "./pages/Home";
 import Profissionais from "./pages/Profissionais";
 
-
 export const routes = createBrowserRouter([
   { path: "/", element: <Main Page={Home} /> },
   { path: "profissionais", element: <Main Page={Profissionais} /> },
