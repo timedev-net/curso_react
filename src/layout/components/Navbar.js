@@ -1,13 +1,11 @@
 import { useForm } from "react-hook-form";
 import { FaSearch } from 'react-icons/fa'
-import { useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import { Container, Button, Form, Nav, Navbar, NavDropdown, InputGroup} from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import { Container, Button, Form, Nav, Navbar, InputGroup} from "react-bootstrap";
 import './navbar.css'
 
 export default function () {
   const navigate = useNavigate();
-  const location = useLocation();
   const {
     register,
     handleSubmit,
