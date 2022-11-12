@@ -6,11 +6,13 @@ import './navbar.css'
 
 export default function () {
   const navigate = useNavigate();
-  const {
-    register,
-    handleSubmit,
-  } = useForm();
-  const onSubmit = (data) => alert(data.pesquisa);
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (input) => alert(input.pesquisa);
+
+  function submeter(parametro) {
+    alert(parametro.pesquisa)
+  }
 
   return (
     <Navbar bg="light" expand="lg" className="mb-3 w-100">
@@ -22,8 +24,10 @@ export default function () {
             <Nav.Link onClick={() => navigate('/')}>Inicio</Nav.Link>
             <Nav.Link onClick={() => navigate('/profissionais')}>Profissionais</Nav.Link>
             <Nav.Link onClick={() => navigate('/vagas_abertas')}>Vagas Abertas</Nav.Link> 
+            <Nav.Link onClick={() => navigate('/processo_seletivo')}>Processos Seletivos</Nav.Link> 
+            
           </Nav>
-         <Form className="d-flex" onSubmit={handleSubmit(onSubmit)}>
+         <Form className="d-flex" onSubmit={handleSubmit(submeter)}>
             <InputGroup className="">
               <Form.Control
                 className="input-pesquisa"

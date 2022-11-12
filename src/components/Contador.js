@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Card, Button } from "react-bootstrap";
 
 export default function Contador() {
@@ -12,6 +12,18 @@ export default function Contador() {
     function subtrai() {
         setNumero(numero - 1)
     }
+
+
+  useEffect(() => {
+    console.log('montou o componente')
+    return () => {
+      console.log('desmontou o componente')
+    }
+  }, [])
+
+  useEffect(() => {
+    console.log('modifiquei o número')
+  }, [numero])
 
   return (
     <Card style={{ width: "18rem", display: "flex", alignItems: "center" }}>
