@@ -1,7 +1,7 @@
-import { Card, Button } from "react-bootstrap";
 import { FaBeer } from "react-icons/fa";
+import { Card, Button } from "react-bootstrap";
 
-function MyCard({ nome }) {
+export default function ProfileCard ({ nome }) {
   return (
     <Card style={{ width: "18rem", display: "flex", alignItems: "center" }}>
       <Card.Img variant="top" src="image.jpeg" style={{ width: 120 }} />
@@ -18,5 +18,3 @@ function MyCard({ nome }) {
     </Card>
   );
 }
-
-export default MyCard;

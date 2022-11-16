@@ -1,10 +1,6 @@
-import Navbar from "./components/Navbar";
-
-function Main({ Page }) {
-
+export default function Minimum ({ Page }) {
   return (
-    <div style={{display: "flex", flexDirection: "column", backgroundColor: "#ccc", height: "100vh", alignItems: "center",}}>
-      <Navbar />
+    <div style={{display: "flex", flexDirection: "column", backgroundColor: "#ccc", height: "100vh", alignItems: "center", justifyContent: "center"}}>
       <div className="container border p-3 rounded shadow bg-light">
         <Page />
       </div>
@@ -17,5 +13,3 @@ function Main({ Page }) {
     </div>
   );
 }
-
-export default Main;

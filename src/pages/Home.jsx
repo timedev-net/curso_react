@@ -1,5 +1,5 @@
 import React from "react";
-import MyCard from "../components/MyCard";
+import ProfileCard from "../components/ProfileCard";
 
 export default function Home() {
   return (
@@ -11,10 +11,10 @@ export default function Home() {
         flexWrap: "wrap",
       }}
     >
-      <MyCard nome="Home" />
-      <MyCard nome="Card 2" />
-      <MyCard nome="Card 3" />
-      <MyCard />
+      <ProfileCard nome="Home" />
+      <ProfileCard nome="Card 2" />
+      <ProfileCard nome="Card 3" />
+      <ProfileCard />
     </div>
   );
 }

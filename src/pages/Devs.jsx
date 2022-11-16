@@ -1,10 +1,10 @@
 import React from 'react'
-import MyCard from '../components/MyCard'
+import ProfileCard from '../components/ProfileCard'
 
-export default function ProcessoSeletivo() {
+export default function Devs() {
   return (
   <div style={{display: "flex", gap: 10, justifyContent: 'center', flexWrap: 'wrap'}}>
-    <MyCard nome="Processos Seletivos" />
+    <ProfileCard nome="Profissionais" />
   </div>
   )
 }
