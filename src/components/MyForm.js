@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Card, Button, Form } from "react-bootstrap";
 import { FaBeer } from "react-icons/fa";
+// import { toast } from 'react-toastify';
 
 export default function MyForm() {
 
@@ -10,6 +11,7 @@ export default function MyForm() {
   function salvar(e) {
     e.preventDefault()
     alert(nome)
+    // toast.success(nome);
   }
 
   useEffect(() => {
