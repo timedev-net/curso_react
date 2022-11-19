@@ -1,15 +1,24 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-toastify/dist/ReactToastify.css";
+import "./styles/global.css";
+import { BrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import { Provider } from "react-redux";
+import MyRoutes from "./routes/MyRoutes";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./styles/global.css"
-import { router } from "./Routes";
-import { RouterProvider } from "react-router-dom";
-import { useEffect } from 'react';
+import { store } from "./store";
 
 function App() {
-
-
-
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Provider store={store}>
+        <ToastContainer theme="colored" />
+        <BrowserRouter>
+          <MyRoutes />
+        </BrowserRouter>
+      </Provider>
+    </>
+  );
 }
 
 export default App;
