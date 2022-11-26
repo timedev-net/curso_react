@@ -11,19 +11,10 @@ export default function Login() {
   const navigate = useNavigate();
   const [gitName, setGitName] = useState('')
   const [password, setPassword] = useState('')
-
-
-  // const [gitData, setGitData] = useState([]) 
   
   function verify(gitName){
     if (gitName === 'admin' && password === 'admin'){
       navigate('/inicio')
-      // useEffect(()=>{
-      //   fetch('https://api.github.com/users/timedev-net')
-      //   .then(response => response.json() )
-      //   .then(data => setGitData(data))
-      // },[])
-      // console.log(gitData.name)
     }else{
       toast.error('Credenciais incorretas!')
     }
