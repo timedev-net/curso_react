@@ -22,7 +22,7 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }}>
-            <Nav.Link onClick={() => navigate('/')}>Inicio</Nav.Link>
+            <Nav.Link onClick={() => navigate('/inicio')}>Inicio</Nav.Link>
             <Nav.Link onClick={() => navigate('/profissionais')}>Profissionais</Nav.Link>
             <Nav.Link onClick={() => navigate('/empresas')}>Empresas</Nav.Link>             
           </Nav>
