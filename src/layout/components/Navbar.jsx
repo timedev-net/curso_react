@@ -9,7 +9,7 @@ export default function NavBar() {
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (input) => alert(input.pesquisa);
+  // const onSubmit = (input) => alert(input.pesquisa);
 
   function submeter(parametro) {
     alert(parametro.pesquisa)
