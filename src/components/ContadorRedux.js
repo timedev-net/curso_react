@@ -34,7 +34,7 @@ export default function ContadorRedux() {
   return (
     <Card style={{ width: "20rem", display: "flex", alignItems: "center" }}>
       <Card.Body>
-        <Card.Title>Meu Contador com Redux</Card.Title>
+        <Card.Title>Redux</Card.Title>
         <h1>Valor: {rd_contador.numero}</h1>
         <Button onClick={subtrai}>Subtrai</Button>{" "}
         <Button onClick={adiciona}>Adiciona</Button>{" "}

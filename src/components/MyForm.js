@@ -14,6 +14,14 @@ export default function MyForm() {
     // toast.success(nome);
   }
 
+  function meuEffect(fn, error) {
+    if(true) {
+      fn()
+    } else {
+      error()
+    }
+  }
+
   useEffect(() => {
     setNome('esse é um teste')
   }, [])

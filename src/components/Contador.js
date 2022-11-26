@@ -26,7 +26,7 @@ export default function Contador() {
   return (
     <Card style={{ width: "20rem", display: "flex", alignItems: "center" }}>
       <Card.Body>
-        <Card.Title>Meu Contador com State</Card.Title>
+        <Card.Title>State</Card.Title>
         <h1>Valor: {numero}</h1>
         <Button onClick={subtrai}>Subtrai</Button>{" "}
         <Button onClick={adiciona}>Adiciona</Button>

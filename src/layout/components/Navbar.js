@@ -25,6 +25,7 @@ export default function () {
             <Nav.Link onClick={() => navigate('/profissionais')}>Profissionais</Nav.Link>
             <Nav.Link onClick={() => navigate('/vagas_abertas')}>Vagas Abertas</Nav.Link> 
             <Nav.Link onClick={() => navigate('/processo_seletivo')}>Processos Seletivos</Nav.Link> 
+            <Nav.Link onClick={() => navigate('/contadores')}>Contadores</Nav.Link> 
             
           </Nav>
          <Form className="d-flex" onSubmit={handleSubmit(submeter)}>
