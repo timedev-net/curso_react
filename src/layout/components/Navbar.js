@@ -3,15 +3,23 @@ import { FaSearch } from 'react-icons/fa'
 import { useNavigate } from "react-router-dom";
 import { Container, Button, Form, Nav, Navbar, InputGroup} from "react-bootstrap";
 import './navbar.css'
+import { login, logout } from '../../store/slices/userSlice'
+import { useSelector, useDispatch } from "react-redux";
 
 export default function () {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (input) => alert(input.pesquisa);
 
   function submeter(parametro) {
     alert(parametro.pesquisa)
+  }
+
+  const handleLogout = () => {
+    sessionStorage.clear();
+    dispatch(logout())
   }
 
   return (
@@ -39,6 +47,7 @@ export default function () {
               <Button className="bg-white" type="submit" style={{borderColor: '#ced4da', borderLeft: 0}}><FaSearch color="#198754"/></Button>
             </InputGroup>
           </Form>
+          <Nav.Link className="ms-3" onClick={handleLogout}>Sair</Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
