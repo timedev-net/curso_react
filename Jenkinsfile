@@ -1,12 +1,17 @@
 #!/usr/bin/env groovy
 
 node {
+
+    when {
+        // check if branch is master
+        branch 'master'
+    }
     stage('identifica a pasta') {
       sh 'pwd'
     }
     
     stage('Pegando o projeto do Repositorio remoto') {
-      git branch: 'main', url: 'https://github.com/timedev-net/curso_react.git'
+      git branch: 'main', credentialsId: 'gitlab-drfrota', url: 'https://github.com/timedev-net/curso_react.git'
     }
     stage('verifica se tem coisa na pasta') {
       sh 'ls'
