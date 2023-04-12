@@ -2,10 +2,6 @@
 
 node {
 
-    when {
-        // check if branch is master
-        branch 'master'
-    }
     stage('identifica a pasta') {
       sh 'pwd'
     }
