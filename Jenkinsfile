@@ -1,6 +1,9 @@
 #!/usr/bin/env groovy
 
 node {
+    stage('identifica a pasta') {
+      sh 'pwd'
+    }
     stage('Fazendo o build da imagem docker do projeto ') {
       sh 'docker build -t img_curso_react .'
     }
