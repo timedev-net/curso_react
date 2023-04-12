@@ -1,14 +1,11 @@
 
 pipeline {
 
-    // agent any
-
-    // environment {
-    //     //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
-        
-    //     // VERSION = readMavenPom().getVersion()
-    // }
-
+   node {
+    
+    stage('Fazendo o build da imagem docker do projeto ') {
+      sh 'docker ps -a'
+    }
     stage('Build and Publish Image') {
         when {
             branch 'main'  //only run these steps on the master branch
@@ -21,6 +18,7 @@ pipeline {
             """
         }
     }
+   }
 
     
 }
