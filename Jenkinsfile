@@ -4,6 +4,13 @@ node {
     stage('identifica a pasta') {
       sh 'pwd'
     }
+    
+    stage('Pegando o projeto do Repositorio remoto') {
+      git branch: 'main', url: 'https://github.com/timedev-net/curso_react.git'
+    }
+    stage('verifica se tem coisa na pasta') {
+      sh 'ls'
+    }
     stage('Fazendo o build da imagem docker do projeto ') {
       sh 'docker build -t img_curso_react .'
     }
