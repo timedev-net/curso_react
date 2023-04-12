@@ -4,22 +4,17 @@ node {
     
     stage("Modelo de Jenkinsfile"){
         
-            echo "====++++executing A++++===="
+        try {
+            echo "==== executa os comandos ===="
             sh '''
                 docker ps -a
             '''
-        
-        
-            always{
-                echo "====++++always++++===="
-            }
-            success{
-                echo "====++++A executed successfully++++===="
-            }
-            failure{
-                echo "====++++A execution failed++++===="
-            }
-    
+        }
+        catch (exception) {
+            echo "==== deu erro ===="
+        } finally {
+            echo "==== terminou ===="
+        }
         
     }
   
