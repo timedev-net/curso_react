@@ -1,13 +1,13 @@
-#!/usr/bin/env groovy
+
 pipeline {
 
-    agent any
+    // agent any
 
-    environment {
-        //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
+    // environment {
+    //     //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
         
-        // VERSION = readMavenPom().getVersion()
-    }
+    //     // VERSION = readMavenPom().getVersion()
+    // }
 
     stage('Build and Publish Image') {
         when {
