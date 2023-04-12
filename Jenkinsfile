@@ -3,13 +3,13 @@
 node {
     
     stage("Modelo de Jenkinsfile"){
-        steps{
+        
             echo "====++++executing A++++===="
             sh '''
                 docker ps -a
             '''
-        }
-        post{
+        
+        
             always{
                 echo "====++++always++++===="
             }
@@ -20,7 +20,7 @@ node {
                 echo "====++++A execution failed++++===="
             }
     
-        }
+        
     }
   
 }
